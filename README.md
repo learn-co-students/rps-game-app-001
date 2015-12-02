@@ -24,3 +24,5 @@ The Sinatra application should serve an HTML page that displays the move that
 the player made, the move that the computer made, and whether the player won,
 lost, or tied. 
 
+
+<a href='https://learn.co/lessons/rps-game-app' data-visibility='hidden'>View this lesson on Learn.co</a>
