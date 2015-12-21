@@ -1,1 +1,15 @@
 <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+
+<p>Your Move: <b><%= @game.move.capitalize %></b></p>
+
+<p>The Computer's Move: <b><%= @game.computer.capitalize %></b></p>
+
+<p>Outcome: 
+  <% if @game.won? %>
+    <b>You won!</b>
+  <% elsif @game.tied? %>
+    <b>You tied!</b>
+  <% else %>
+    <b>You lost =( </b>
+  <% end %>
+</p>
