@@ -1,6 +1,5 @@
 class RPSGame
-  attr_reader :move
-  attr_accessor :computer
+  attr_reader :move, :computer
 
   VALID_MOVES = ['rock', 'paper', 'scissors']
 
