@@ -1,1 +1,18 @@
 <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+<% if @game.won? %>
+  <h2> You Won! :D </h2>
+  <p> Your <%= @game.play.to_s %> beats the computer's <%= @game.computer_play %>!</p>
+<% elsif @game.tied? %>
+  <h2> You Tied :/ </h2>
+  <p> Your <%= @game.play.to_s %> ties the computer's <%= @game.computer_play %>. </p>
+<% elsif @game.lost? %>
+  <h2> You Lost :( </h2>
+  <p> Your <%= @game.play.to_s %> loses to the computer's <%= @game.computer_play %>. </p>
+<% else %>
+  <h2> Something has gone horribly wrong </h2>
+<% end %>
+
+<h2> Your Record: </h2>
+  <p> Wins: <%= RPSGame.wins %></p>
+  <p> Losses: <%= RPSGame.losses %></p>
+  <p> Ties: <%= RPSGame.ties %></p>
